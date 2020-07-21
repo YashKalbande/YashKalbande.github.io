@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>yash's portfolio</title>
+	<meta name="author" content="Yash" />
+	<meta name="description" content="hey, this is Yash. check out my portfolio." />
+	<meta name="keywords"  content="yash" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i|Lato:300,400,700" rel="stylesheet">
+
+	<!-- fontawesome -->
+    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163443788-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-163443788-1');
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active dark oneliner" id="section0">
+		<h1>hey, i'm Yash 👋🏾</h1>
+	</div>
+
+	<div class="section light oneliner" id="section3">
+		<h1>i have publish my projects at <a target="_blank" href="https://github.com/YashKalbande">github</a></h1>
+	</div>
+
+	<div class="section dark oneliner" id="section3">
+
+		<h1>i've few badges at <a target="_blank" href="https://google.qwiklabs.com/public_profiles/a628e076-f25d-4e0f-9c1f-4b795157a8a5">qwicklabs</a></h1>
+
+	</div>
+
+	<!--<div class="section dark oneliner" id="section3">
+		add hobbies images in future!!
+	</div> -->
+
+	<div class="section light" id="section5">
+	  <div class="more-info">
+			<h1>still curious?</h1>
+				<h2><a target="_blank" class="link" href="mailto:yash.n.kalbande@gmail.com" title="shoot me an email">email</a></h2>
+				<h2><a target="_blank" class="link" href="https://www.linkedin.com/in/yash-kalbande-a1927a190" title="watch my quora">linkedin</a></h2>
+				<h2><a target="_blank" class="link" href="https://https://twitter.com/kalbande_yash" title="watch my quora">twitter</a></h2>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- fullpage.js    i have deleted #427AFF   #54FF9F-->
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+        anchors: ['home','github','acchivement','more'],
+        sectionsColor: ['white', '#FF0000', '#FFEE56', '#808080'],
+		scrollingSpeed: 600,
+        animateAnchor:false
+    });
+</script>
+
+<!-- fitty.js - fit text size to div -->
+<script src="dist/fitty.min.js"></script>
+<script defer>
+	fitty('h1', {
+		minSize:30,
+		maxSize: 50
+	});
+</script>
+
+</body>
+
+</html>

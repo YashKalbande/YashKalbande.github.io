@@ -1,0 +1,161 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    margin:0;
+    padding:0;
+    color:black;
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Josefin Sans', arial, helvetica;
+	color: black;
+}
+
+/* center each fullpage element */
+.section{
+	text-align:center;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+/* make grid of images*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	color: #333;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+.container {
+	width: 60%;
+	margin: 2rem auto;
+}
+element.style{
+	width:233px;
+	height: 135px;
+	z-index: 86;
+	transform:translate3d(-5000px, -5000px, 0px ) ;
+}
+/* make links bold */
+.oneliner a {
+	font-weight: 700;
+}
+
+.light h1,h2,h3,h4,h5,h6  {
+	color: white;
+}
+
+.dark h1,h2,h3,h4,h5,h6 {
+	color: black;
+}
+
+/* more info section */
+
+.more-info{
+	text-align: left;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+.more-info h1{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.more-info h2{
+	font-size: 2.5em !important;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+
+.more-info a:hover{
+    cursor: pointer;
+}
+
+/* good over evil, light vs dark */
+
+.light {
+	color: white;
+}
+
+.dark {
+	color: black;
+}
+
+.light a {
+	color: rgb(255,255,255,0.6);
+}
+
+.dark a {
+	color: rgb(0,0,0,0.3);
+}
+
+a:hover {
+   	color: rgba(0,0,0,0.5);
+}
+
+/* media queries */
+@media(max-width:870px) {
+    .more-info h2{
+        font-size: 36px !important;
+    }
+}
+
+@media(max-width:600px) {
+	.more-info h2{
+        font-size: 30px !important;
+    }
+}
